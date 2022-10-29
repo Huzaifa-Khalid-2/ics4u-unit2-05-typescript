@@ -1,7 +1,7 @@
 /**
  * This class creates a vehicle
  *
- * By:      Ethan Prieur
+ * By:      Huzaifa Khalid
  * Version: 1.0
  * Since:   2022-10-18
  */
@@ -9,20 +9,20 @@
 class Vehicle {
   public speed: number = 0
   public maxSpeed: number
-  public doorAmount: number
+  public numberOfDoors: number
   public licensePlate: string
   public colour: string
 
   constructor(
     colour: string,
     licensePlate: string,
-    doorAmount: number,
+    numberOfDoors: number,
     maxSpeed: number
   ) {
     this.licensePlate = licensePlate
     this.colour = colour
     this.maxSpeed = maxSpeed
-    this.doorAmount = doorAmount
+    this.numberOfDoors = numberOfDoors
   }
 
   // getters
@@ -34,8 +34,8 @@ class Vehicle {
     return this.maxSpeed
   }
 
-  public getDoorAmount(): number {
-    return this.doorAmount
+  public getNumberOfDoors(): number {
+    return this.numberOfDoors
   }
 
   public getLicensePlate(): string {
@@ -75,7 +75,7 @@ class Vehicle {
     console.log(
       `        --> Speed: ${this.speed}
         --> MaxSpeed: ${this.maxSpeed}
-        --> Number of doors: ${this.doorAmount}
+        --> Number of doors: ${this.numberOfDoors}
         --> License Plate: ${this.licensePlate}
         --> Colour: ${this.colour}`
     )
